@@ -21,13 +21,13 @@ A PHP script that monitors domain availability and sends email notifications whe
 
 1. Clone the repository or download the files:
 ```bash
-git clone [repository-url]
+git clone https://github.com/suvash23/domain-monitor.git
 cd domain-monitor
 ```
 
 2. Install dependencies using Composer:
 ```bash
-composer require phpmailer/phpmailer monolog/monolog
+composer install
 ```
 
 3. Create the logs directory:
