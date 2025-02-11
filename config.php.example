@@ -1,0 +1,37 @@
+<?php
+// config.php
+
+return [
+    // Domain monitoring settings
+    'domain' => [
+        'name' => 'example.com',
+        'check_interval' => 300, // 5 minutes in seconds
+        'whois_server' => 'whois.internic.net',
+        'whois_port' => 43,
+        'whois_timeout' => 10
+    ],
+
+    // Email notification settings
+    'email' => [
+        'recipient' => 'your@email.com',
+        'smtp' => [
+            'host' => 'smtp.example.com',
+            'port' => 587,
+            'username' => 'your_username',
+            'password' => 'your_password',
+            'encryption' => 'tls',
+            'from_email' => 'from@example.com',
+            'from_name' => 'Domain Monitor'
+        ]
+    ],
+
+    // Logging settings
+    'logging' => [
+        'directory' => __DIR__ . '/logs',
+        'filename' => 'domain_monitor.log',
+        'max_files' => 30,
+        'level' => 'info', // debug, info, warning, error
+        'console_output' => true
+    ]
+];
+?>

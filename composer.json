@@ -1,0 +1,25 @@
+{
+    "name": "domain-monitor/domain-monitor",
+    "description": "A PHP script that monitors domain availability and sends email notifications",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "phpmailer/phpmailer": "^6.8",
+        "monolog/monolog": "^2.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "DomainMonitor\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Suvash Sarker",
+            "email": "suvash.cse.duet@outlook.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
+}
